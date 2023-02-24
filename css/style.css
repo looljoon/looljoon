@@ -160,7 +160,7 @@ img{
     opacity: 0;
     position: absolute;
     right: 19%;
-    top: 29%;
+    top: 32%;
     width: 25%;
     font-size: 1.4em;
     line-height: 1.7;
@@ -261,7 +261,7 @@ img{
 #right_skill{ 
     width: 25%;
     padding-left: 9%;
-    padding-top: 5em;}
+    padding-top: 11em;}
 
 #tool_box>ul>li{ 
     float: left;
@@ -293,7 +293,7 @@ img{
     margin-left: 1em;
 } 
 #tool_box>ul>li:nth-of-type(3)>span{
-    margin-left: 4em;
+    margin-left: 3.5em;
 } 
 
 #tool_box>ul>li:first-of-type>img{
