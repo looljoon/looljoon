@@ -7,28 +7,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
     <title>personal website</title>
 </head>
 
 <body>
-    <nav id="nav">
-      <ul>
-        <li><a href="#aboutme">ABOUT ME</a></li>
-        <li><a href="#skill">SKILL</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
+    
 
     <!-- --------------------------------------------------------- -->
     <!-- main -->
     <!-- --------------------------------------------------------- -->
     <section id="home" class="page">
-      <p>PARKJIYOON<br>PORTFOLIO 2023</p>
-      <img src="images/simplemainsvg.svg" alt="mainsvg">
+      <div id="wrap0" class="wrap">
+        <p>PARKJIYOON<br>PORTFOLIO 2023</p>
+        <img src="images/simplemainsvg.svg" alt="mainsvg">
+      
+
+        <nav id="nav">
+          <ul>
+            <li><a class="bf" href="#aboutme">ABOUT ME</a></li>
+            <li><a class="bf" href="#skill">SKILL</a></li>
+            <li><a class="bf" href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="bf" href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
     </section>
  
     <!-- --------------------------------------------------------- -->
@@ -36,54 +44,54 @@
     <!-- --------------------------------------------------------- -->
  
       <section id="aboutme" class="page">
-           
-       
-            <div id="mainImg">
+        
+        <div id="wrap1" class="wrap row">
+
+          <!-- 프로필 이미지 -->
+            <div id="profileimg" class="col-md-6">
               <img src="images/main_pho.png" alt="aboutme">
             </div>
        
-            <!-- -------------------------------------------------------------- -->
+ 
+            <div id="profileBox" class="col-md-6">
+              <div id="pfbox1">
+                <ul>
+                  <li><span class="blank">이름</span> 박지윤</li>             
+                  <li><span class="blank">나이</span> 28살 (1996년) </li>
+                  <li><span class="blank">주소</span> 광주광역시 광산구 수완동</li> 
+                </ul>
 
-            <div id="profileBox1">
-              <ul id="profile1">
-                <li><span class="blank">이름</span> 박지윤</li>             
-                <li><span class="blank">나이</span> 28살 (1996년) </li>
-                <li><span class="blank">주소</span> 광주광역시 광산구 수완동</li> 
-              </ul>
-
-              <ul id="profile2">
-                <li> <span class="blank">12.03 - 15.02 </span> 대광여자고등학교 졸업 </li>
-                <li> <span class="blank">15.03 - 20.02 </span> 조선대학교 신소재전공 졸업 </li>
-                <li> <span class="blank">20.03 - 21.03 </span> 조선대학교 공과대학 행정조교 </li>
-                <li> <span class="blank">21.06 - 22.12 </span> 광주 SBS 아카데미 컴퓨터 아트 학원<br> <span id=pro2_high>프로그래밍 과정 및 웹퍼블리싱 과정 수료</span> </li>
-              </ul>
-
-            </div>
-
-
-            <!-- -------------------------------------------------------------- -->
-
-            <div id="profileBox2">
-              <div id="profile3">
-                  <p>
-                    안녕하세요<br>
-                    신입 웹 퍼블리셔 박지윤입니다.
-                  </p>
-                  
-                  <p>
-                    저는 '위기를 곧 기회'라 생각하는 <span class="point">긍정</span>의 힘과<br> <span class="point">낙천적</span>인 성격으로 함께하는 팀원들에게 선한<br> 영향력을 끼치고자 합니다.
-                  </p>
-                  <p>
-                    <span class="point">호기심</span>이 많아 새로운 <span class="point">도전</span>에 두려워하기보다<br> 성장해가는 모습을 그리며 꾸준히 발전에<br> 노력하는 사람입니다.
-                  </p>
-                  
-
+                <ul>
+                  <li> <span class="blank">12.03 - 15.02 </span> 대광여자고등학교 졸업 </li>
+                  <li> <span class="blank">15.03 - 20.02 </span> 조선대학교 신소재전공 졸업 </li>
+                  <li> <span class="blank">20.03 - 21.03 </span> 조선대학교 공과대학 행정조교 </li>
+                  <li> <span class="blank">21.06 - 22.12 </span> 광주 SBS 아카데미 컴퓨터 아트 학원<br> 
+                    <span class="blank2">프로그래밍 과정 및 웹퍼블리싱 과정 수료</span> </li>
+                  <li> <span class="blank">23.04 - 23.10 </span> (주)klc 웹 퍼블리셔 재직중 </li>
+                </ul>
               </div>
 
-           
-          </div>
+              <div id="pfbox2" >
+                <p>
+                  안녕하세요<br>
+                  웹 퍼블리셔 박지윤입니다.
+                </p>
+                
+                <p>
+                  저는 '위기를 곧 기회'라 생각하는 <span class="point">긍정</span>의 힘과<br> <span class="point">낙천적</span>인 성격으로 함께하는 팀원들에게 선한<br> 영향력을 끼치고자 합니다.
+                </p>
+                <p>
+                  <span class="point">호기심</span>이 많아 새로운 <span class="point">도전</span>에 두려워하기보다<br> 성장해가는 모습을 그리며 꾸준히 발전에<br> 노력하는 사람입니다.
+                </p>
+              </div>  
 
+            </div>
+        <!-- profileBox 끝 -->
    
+        </div>
+        <!-- wrap1 끝 -->
+
+           
       </section>
       
 
@@ -92,60 +100,83 @@
     <!-- skill -->
     <!-- --------------------------------------------------------- -->
     <section id="skill" class="page">
-          <div id="wrap2">
+          <div id="wrap2" class="wrap container">
+
             <div id="left_skill">
-              <ul>
-                <li id="html_icon" class="skillicon">  
-                  <span class="skill_count" data-rate="90">00</span>
-                  <span class="percent">%</span>
-                </li>
 
-                <li id="css_icon" class="skillicon">
-                  <span class="skill_count" data-rate="90">00</span>
-                  <span class="percent">%</span>
-                </li>
+              <div class="row">
+                <div id="html_icon" class="skillIcon col-md-4">  
+                  <img src="images/skill_html.png" alt="">
+                  <div class="row">
+                    <span class="skill_count col-md-6" data-rate="90">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
+
+                <div id="css_icon" class="skillIcon col-md-4">
+                  <img src="images/skill_css.png" alt="">
+                  <div class="row">
+                    <span class="skill_count col-md-6" data-rate="90">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
+
+                <div id="jquery_icon" class="skillIcon col-md-4">
+                  <img src="images/skill_jQuery.png" alt="">
+                  <div class="row">
+                    <span class="skill_count col-md-6" data-rate="85">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
+              </div>
 
 
-                <li id="jquery_icon" class="skillicon">
-                  <span class="skill_count" data-rate="85">00</span>
-                  <span class="percent">%</span>
-                </li>
+              <div class="row">
+                <div id="js_icon" class="skillIcon col-md-4">
+                  <img src="images/skill_js.png" alt="">
+                   <div class="row">
+                    <span class="skill_count col-md-6" data-rate="85">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
 
+                <div id="ps_icon" class="skillIcon col-md-4">
+                  <img src="images/skill_photoshop.png" alt="">
+                   <div class="row">
+                    <span class="skill_count col-md-6" data-rate="80">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
 
-                <li id="js_icon" class="skillicon">
-                  <span class="skill_count" data-rate="85">00</span>
-                  <span class="percent">%</span>
-                </li>
+                <div id="ai_icon" class="skillIcon col-md-4">
+                  <img src="images/skill_iller.png" alt="">
+                   <div class="row">
+                    <span class="skill_count col-md-6" data-rate="85">00</span>
+                    <span class="percent col-md-6">%</span>
+                  </div>
+                </div>
+              </div>
 
-                <li id="ps_icon" class="skillicon">
-                  <span class="skill_count" data-rate="80">00</span>
-                  <span class="percent">%</span>
-                </li>
-
-                <li id="ai_icon" class="skillicon">
-                  <span class="skill_count" data-rate="85">00</span>
-                  <span class="percent">%</span>
-                </li>
-              </ul>
             </div>
             
             <!-- 오른쪽 -->
-            <div id="right_skill"> 
+            <div id="right_skill" class="row"> 
  
-              <div id="tool_box">
-                <h3>Available Tool</h3>
-                <ul>
-                  <li><img src="images/skill_visualstudio.png" alt="vs"></li>
-                  <li><img src="images/skill_eclipse.png" alt="eclipse"></li>  
-                </ul>
+              <div id="tool_box" clas="container">
+                <h4>Available Tool</h4>
+                <!-- 사용할줄아는 툴 -->
+                <div class="row">
+                  <div class="toolImg col-md-6" ><img src="images/skill_visualstudio.png" alt="vs"></div>
+                  <div class="toolImg col-md-6" ><img src="images/skill_eclipse.png" alt="eclipse"></div>  
+                </div>
               </div>
               <!-- 자격증 -->
               <div id="certification">
-                <h3>Certification</h3>
+                <h4>Certification</h4>
                 <span>정보처리기사 (2022.06)</span>
               </div>
             </div>
-
+ 
             <!-- wrap_sk -->
           </div>
       </section>
@@ -155,7 +186,7 @@
     <!-- --------------------------------------------------------- -->
 
     <section id="portfolio" class="page">
-      <div id="wrap3">
+      <div id="wrap3" class="wrap">
         <!-- 퍼스널 페이지  -->
         <div class="project" id="content1">
           <div class="mockup">
@@ -163,14 +194,14 @@
             
           </div>
           <div class="mockup_info">
+            <h3><img src="images/yellowfont_personal.png" alt="개인페이지"></h3>
+            
             <ul>
-              <h3><img src="images/yellowfont_personal.png" alt="개인페이지"></h3>
               <li>프로젝트<span>개인 웹사이트</span></li>
               <li>제작 기간<span>디자인 기획 + 디자인 + 코딩 총 10일</span></li>
               <li>사용한 프로그램<span>Photoshop, Illustrator, Vscode</span></li>
               <li>프로그램<span>HTML/CSS/JavaScript</span></li>
               <li>기여도<span>기획100% + 디자인100%</span></li>
-              <li>가용기기<span>PC</span></li>
             </ul>
             <div class="go">
               <a href="#">view</a>
@@ -186,14 +217,15 @@
           </div>
 
           <div class="mockup_info">
+          
+            <h3><img src="images/yellowfont_Renewal.png" alt="피치항공"></span></h3>
+
             <ul>
-              <h3><img src="images/yellowfont_Renewal.png" alt="피치항공"></span></h3>
               <li>프로젝트<span>피치 항공</span></li>
               <li>제작 기간<span>디자인 기획 + 디자인 + 코딩 총 10일</span></li>
               <li>사용 프로그램<span>Photoshop, Illustrator, Vscode</span></li>
               <li>프로그램<span>HTML/CSS/JavaScript</span></li>
               <li>기여도<span>기획100% + 디자인100%</span></li>
-              <li>가용기기<span>PC, 태블릿, 휴대폰 </span></li>
             </ul>
             <div class="go">
               <a href="peach/index.html" target="_blank">view</a>
@@ -210,14 +242,13 @@
              
             </div>
             <div class="mockup_info">
+              <h3><img src="images/yellowfont_Renewal.png" alt="삼성페이"></h3>
               <ul>
-                <h3><img src="images/yellowfont_Renewal.png" alt="삼성페이"></h3>
                 <li>프로젝트<span>SAMSUNG PAY</span></li>
                 <li>제작 기간<span>디자인 기획 + 디자인 + 코딩 총 12일</span></li>
                 <li>사용 프로그램<span>Photoshop, Illustrator, Vscode</span></li>
                 <li>프로그램<span>HTML/CSS/JavaScript</span></li>
                 <li>기여도<span>기획100% + 디자인100%</span></li>
-                <li>가용기기<span>PC </span></li>
               </ul>
               <div class="go">
                 <a href="samsung/index.html" target="_blank">view</a></div>
@@ -231,36 +262,29 @@
     <!-- --------------------------------------------------------- -->
     <section id="contact" class="page">
   
-        <div id="wrap4">
-          <h3>contact</h3>
-          
-          <div id="contactBox">
-            <p>
-              박지윤
-            </p>
-            <p>
-              <span>t.</span> 010.5054.8476
-            </p>
-            <p>
-              <span>m.</span> amilyy70096@gmail.com
-            </p>
-            <p>
-              <span>b.</span> https://blog.naver.com/amilyy70096
-            </p>
+        <h3>contact</h3>
+        <div id="wrap4" class="wrap row">  
+          <div class="col-6" id="contact_left">
+            <ul>
+              <li>박지윤</li>
+              <li>T. 010-5054-8476</li>
+              <li>M. amilyy70096@gmail.com</li>
+              <li>SNS. lool</li>
+            </ul>
           </div>
-          <div id="qr">
+          <div class="col-6" id="contact_left">
             <img src="images/contact_qr.png" alt="qr코드">
             <span>[ 카카오 QR 코드 ]</span>
           </div>
+        </div>
 
-          <div id="footerbt">
-            <p>이 사이트는 상업적 목적이 아닌 박지윤의 개인 포트폴리오 사이트로 제작되었습니다.
-              이 사이트에서 사용한 일부 이미지와 폰트 등은 별도의 저작권이 있을 수 있습니다.</p>
-            <p>&copy 2023 Parkjiyoon. All rights reserved.</p>
-          </div>
+        <div id="footerbt">
+          <p>이 사이트는 상업적 목적이 아닌 박지윤의 개인 포트폴리오 사이트로 제작되었습니다.
+            이 사이트에서 사용한 일부 이미지와 폰트 등은 별도의 저작권이 있을 수 있습니다.</p>
+          <p>&copy 2023 Parkjiyoon. All rights reserved.</p>
+        </div>
         
 
-      </div>
     </section>
       
     </body>
