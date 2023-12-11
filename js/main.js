@@ -1,17 +1,19 @@
 $(function(){
 
 
-  var $navi = $("#nav>ul>li>a");
-  var $aboutMe = $("#aboutme")
+  var $nav = $("#nav>ul>li>a");
   
   var numAnimation = $(".skill_count");
   var pageIndex = Math.round($(window).scrollTop() / $(window).height());
-  var windowHeight = $(window).height();
+  var windowHeight = $(".page").height();
   var lastPageIndex = $(".page").length -1;
   var cnt = 0;
   console.log("index : ", pageIndex);
   console.log("cnt : ", cnt);
     
+
+
+
 //-------------------------------------------------------
 //-------------------------------------------------------
 // 원페이지 스크롤링
@@ -35,12 +37,17 @@ window.addEventListener("wheel",function(event){
     if(pageIndex>=lastPageIndex)return;
 
     if(pageIndex==1){
-      if($("#profileBox1").css('opacity')=="1"){
-        $("#profileBox1").css({"opacity":"0"});
-        $("#profileBox2").css({"opacity":"1"});
-        return;
-      }
-    } 
+        if($("#pfbox1").css('opacity')=="1"){
+          $("#pfbox1").css({
+            "opacity":"0",
+            "transition-duration":"400ms"
+          }),
+          $("#pfbox2").css({
+            "opacity":"1",
+            "transition-duration":"400ms"
+          })
+          return;
+    } }
       
   // 3p경우
     if(pageIndex==lastPageIndex-1){
@@ -54,17 +61,28 @@ window.addEventListener("wheel",function(event){
     else{pageIndex++;}
   }
 
+
+
+
+
   else if(event.deltaY<0){
    
     if(pageIndex<=0)return;
-
+    
     if(pageIndex==1){
-      if($("#profileBox2").css('opacity')=="1"){
-        $("#profileBox2").css({"opacity":"0"});
-        $("#profileBox1").css({"opacity":"1"});
-        return;
-      }}
-  
+        if($("#pfbox2").css('opacity')=="1"){
+          $("#pfbox2").css({
+            "opacity":"0",
+            "transition-duration":"400ms"
+          }),
+          $("#pfbox1").css({
+            "opacity":"1",
+            "transition-duration":"400ms"
+          })
+          return;
+    } }
+
+    
     if(pageIndex==lastPageIndex-1){
       cnt--;
       if(cnt>=0){
@@ -117,12 +135,12 @@ window.addEventListener("wheel",function(event){
 
 $(window).scroll(function(){
 
-  if($("#portfolio").offset().top== $(document).scrollTop()){
-    $navi.addClass('active');
+  if($("#portfolio").offset().top == $(document).scrollTop()){
+    $("#nav>ul>li").addClass('active');
     $(".mockup").addClass('on');
     $(".mockup_info").addClass('on');
   }else{
-    $navi.removeClass('active');
+    $("#nav>ul>li").removeClass('active');
     $(".mockup").removeClass('on');
     $(".mockup_info").removeClass('on');
   }
@@ -133,12 +151,21 @@ $(window).scroll(function(){
 //  nav 의 각 list 를 클릭했을때 a 요소 hash 태그 페이지 이동
 //-------------------------------------------------------
 //-------------------------------------------------------
-$navi.click(function(event){
+$nav.click(function(event){
     console.log(".scroll_move");         
     event.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 
+
+// 화면 크기 변경 시 reload
+jQuery(function($) {
+
+    window.onresize = function(){
+      document.location.reload();
+    };
+
+});
  
 
 
