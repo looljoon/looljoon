@@ -1,0 +1,39 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1000" style="enable-background:new 0 0 1920 1000;" xml:space="preserve">
+<style type="text/css">
+
+	.st0{
+		fill:none;
+		stroke:black;
+		stroke-width:3px;
+		stroke-miterlimit:10;
+		stroke-dasharray:3250;
+		animation: stroke1 2.5s linear;
+		animation-fill-mode:none;
+		}
+
+	@keyframes stroke1 {
+ 		0%{
+    		stroke:black;
+			fill: none;
+    		stroke-dashoffset:3250px;
+         }
+		
+		100% {
+			stroke:black;
+            fill: none;
+            stroke-dashoffset:0px;
+            }
+
+		}
+
+}
+</style>
+<path class="st0" d="M0.5,563.5c0,0,17,23.7,20,37c3.5,15.5,12,150,88,147S205,660,205,660s50-199,59-215
+	c8.8-15.7,41.9-56.4,77.6-47c2.3,0.6,4.4,2,5.8,4c4.2,6.1,10.3,20.5-13.4,32c0,0-16,6-8-9s42.7-19.8,53-26c10-6,17-23-14-18
+	c-30.2,4.9-82,19.6-106.5-39.3C254,331,258,319,264,315c6.7-4.5,22-9,37,11l6,11c0,0-12-32,4-49c5.2-5.5,10.3-8,14.8-8.8
+	c8.4-1.5,16.7,3.3,20.1,11.2c4.8,11.2,10.5,34.5-4.9,64.6c-22,43-18.3,5.6-5-1c14-7,17-5,28-2s46.6-7.5,65-21c19-14,80-66,90-82
+	s82-113,459-77c0,0,130,23,237,72c85.8,39.3,129.1,6.6,143-7.9c3.8-4,5.3-9.7,3.6-15c-3.8-11.8-17.5-27.9-66.5,1.9
+	c-69,42,128,133,218,115s442-22,471,41"/>
+
+</svg>
