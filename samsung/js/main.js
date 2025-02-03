@@ -15,6 +15,7 @@ var $payplanner = $("#payplanner");
     "samsung ticket offset().top : ",$samsung_ticket.offset().top,
     "exchange offset().top : ",$exchange.offset().top,
     "payplanner offset().top : ",$payplanner.offset().top,
+    "cnt5box offset().top : ",$("#cntbox5").offset().top,
     
     " $samsung_ticket.offset().top+$(window).innerHeight()*0.2 : ", $samsung_ticket.offset().top+$(window).innerHeight()*0.2
  
@@ -62,15 +63,15 @@ window.addEventListener("wheel",function(event){
 
 
   $(window).scroll(function(){
-    if($samsung_pass.offset().top == $(document).scrollTop()){
-      $("#sp1").addClass('on');
-      $("#sp2_2").addClass('on');
-      $("#sp3").addClass('on');
+    if($samsung_pass.offset().top*0.9 <= $(document).scrollTop()){
+      $(".pass_p").addClass('on');
+      $("#pass_img1").addClass('on');
+      $("#pass_img2").addClass('on');
     }
     else{
-      $("#sp1").removeClass('on');
-      $("#sp2_2").removeClass('on');
-      $("#sp3").removeClass('on');
+      $(".pass_p").removeClass('on');
+      $("#pass_img1").removeClass('on');
+      $("#pass_img2").removeClass('on');
     }
 
   });
@@ -82,16 +83,25 @@ window.addEventListener("wheel",function(event){
 
   $(window).scroll(function(){
    
-      if ($samsung_ticket.offset().top <= $(document).scrollTop() && $exchange.offset().top>$(document).scrollTop()){
-          $("#leftSt").addClass('on');
-          $("#fixImg").addClass('on');
-          $("#rightSt").addClass('on');
+      if ($samsung_ticket.offset().top*0.99 <= $(document).scrollTop()){
+          $("#left_st").addClass('on');
+          $("#left_img>img").addClass('on');
+          $("#right_st").addClass('on');
+          $("#liner>i").addClass('on');
         }
       else{
-        $("#leftSt").removeClass('on');
-        $("#fixImg").removeClass('on');
-        $("#rightSt").removeClass('on');
-      };   
+        $("#left_st").removeClass('on');
+        $("#left_img>img").removeClass('on');
+        $("#right_st").removeClass('on');
+        $("#liner>i").removeClass('on');
+      }
+      if($("#exchange").offset().top*0.98 <= $(document).scrollTop()){
+        $("#left_st").removeClass('on');
+        $("#ex_wrap").addClass('on');
+      }else{
+        $("#ex_wrap").removeClass('on');
+ 
+      }
     })
 
 //-----------------------------------------------------------------

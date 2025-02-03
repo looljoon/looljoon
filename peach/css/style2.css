@@ -9,8 +9,14 @@ a{
     text-decoration: none;
     display: block;
 }
-
-
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+.main{
+    color: #9b308c;
+    color: #d14e97;
+    background-color: #ffe900;
+}
 li{
     list-style: none;
     
@@ -51,12 +57,12 @@ img{
 
 
 #header{
-    width: 100%;
+    width: 100vw;
     position:relative;
 }
 
 #mainwrap{
-    width: 1200px;
+    width: 100vw;
     margin:0 auto;
 }
 

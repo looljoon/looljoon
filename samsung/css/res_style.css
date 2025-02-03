@@ -1,729 +1,383 @@
-
-@media screen and (max-width: 767px) {
-   #logo>img{
-      width:5em;
-   }
-   
-   #mainh1_1{
-      font-size: 1em;
-   }
-   #mainh1_2{
-      font-size: 3em;
-   }
-   #mainImg1{
-      width:20%;
-      left:40%;
-      top:53%;
-   }
-  /* 핸드폰 */
-   #mainImg2{
-      width:30%;
-      left:50%;
-      top:60%;
-   }
-   #animation-target{
-      width:60%;
-   }
-  
-   
-}
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-   #logo>img{
-      width:6em;
-   }
-   #mainh1_1{
-      font-size: 1.8em;
-   }
-   #mainh1_2{
-      font-size: 4.2em;
-    
-    }
-    #mainImg1{
-      width:15%;
-      left:42.5%;
-      top:48%;
-   }
-  /* 핸드폰 */
-   #mainImg2{
-      width:20%;
-      left:50%;
-      top:60%;
-   }
-   #animation-target {
-      width:60%;
-   }
-}
-
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 767px) {
-  
-   #sp_wrap>p{
-     
-      font-size: 1.5em;
-      height:20%;
-      width:100%;
+@media screen and (max-width:1400px){
+   .cntbox img {
+      width: 39%;
   }
-  #sp_wrap>img{
-   width:35%;
-
-  }
-  #sp2_1{
-   margin-left: 5em;
-  }
+  #right_st {
+   left: 15.5%;
+   top: -1.5%;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-   #sp_wrap{
- 
-    padding-top: 30%;
-   }
-   #sp_wrap>p{
-      font-size: 1.5em;
-      width:5em;
-  }
-  #sp_wrap>img{
-   width:25%;
-
-  }
-
+.cntbox > p {
+   padding-right: 0em;
 }
 
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-
-@media screen and (max-width: 767px) {
-   #samsung_ticket{
-         height:300%; 
-   }
-   #fixP{
-         font-size: 1em;
-         top:40%;
-         width:22%;
-      
-   }
-   #fixP.on{
-         font-size: 1em;   
-         left:3%;
-         top:40%;
-         width:22%;
-   }
-
-   #fixImg{
-      width:35%;
-      left: 45%;
-      top:50%;
-   } 
-
-
-   #fixImg.on{
-      width:35%;
-      left: 45%;
-      top:50%;
-   } 
-
-   .cntBox>img{
-      width:39%;
-      margin-left: 25.5%;
-      margin-top:8em;
-   }
-
-
-   .cntBox>p{ 
-      margin-top:9em;
-      width: 30%;
-      font-size:1em;
-      margin-left:0;
-   }
-
-
 }
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
+@media screen and (max-width:1200px){
 
-   #samsung_ticket{
-      height:450%;
-    }
-   #fixP{
-      font-size: 1.5em;
-      top:40%;
-      width:25%;
-     
-  }
-   #fixP.on{
-      font-size: 1.5em;   
-      left:5%;
-      top:40%;
-      width:25%;
-  }
-
-  #fixImg{
-      width:25%;
-      left: 50%;
-      top:50%;
-     
-   } 
-
-
-   #fixImg.on{
-      width:25%;
-      left: 50%;
-      top:50%;
-   } 
-
-   .cntBox>img{
-      width:28%;
-      margin-left: 36%;
-   margin-top:5em;
+   #logo>img {
+      width: 7%;
    }
-
-   .cntBox>p{ 
-      margin-top:4em;
-      width: 28%;
-      font-size:1.5em;
-      margin-left:2em;
+   #mainImgs {
+      margin-top: 9em;
    }
-
-}
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* exchange  */
-@media screen and (max-width: 767px) {
-   #exchange{
-      height: 100%;
-      padding-top:20em;
-  }
-   #exImage{
-      width:45%;
-      padding-left:5%;
-      padding-top:5em;
-  }
-  
-  #exInfo{
-   width:35%;
-   float: left;
-   margin-top:5em;
-   line-height: 1.8;
-   margin-left:5%;
-}
-
-
-#exInfoP1.on{
-   padding:2em 0;
-}
-
-#exHigh{
-   font-size: 1.2em;
-
-   width:25%;   
-   
-  
-}
-#exFast{
-   font-size: 1.2em;
- 
-   width:25%;  
-   
-
-}
-#exInfoP1{
-   font-size: 1em;
-
-   padding : 2em 0 2em 20%;
-   width:100%;
- 
-}
-
-#exInfoP2{
-   margin-top:1em;
-   font-size:1em;
-   
-   width:100%;
-}
-
-  
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-   #exchange{
-      height: 130%;
-  }
-
-   #exImage{
-      width:40%;
-      padding-left:15%;
-  }
-  
-  #exInfo{
-   width:35%;
-   float: left;
-   margin-top:10em;
-   line-height: 1.8;
-   margin-left:5%;
-}
-
-   #exInfoP1.on{
-      padding:2em 0;
-   }
-
-   #exHigh{
-      font-size: 1.8em;
-      width:25%;         
-   }
-
-   #exFast{
-      font-size: 1.8em;
-      width:25%;  
-   }
-
-   #exInfoP1{
-      font-size: 1.5em;
-      padding : 2em 0 2em 20%;
-      width:100%;
-
-   }
-
-   #exInfoP2{
-      margin-top:1.2em;
-      font-size:1em;
-      width:100%;
-   }
-
-
-
-}
-
-
-
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* payplanner */
-
-
-@media screen and (max-width: 767px) {
-   
-   #pp_wrap{
-      width:100%;
-      height: 100%;
-      position:relative;
-  }
-
-   #ppLeft>img{
-     margin: 0 auto;
-      width:25em;
-      left:50%;
-      top:30%;
-      transform: translate(-50%,-50%);
-  }
-
-  #ppRight>h3{
-   width:100%;
-   text-align: center;
-   font-size: 2.5em;
-   left:0.5%;
-   top:0;
-   font-size:2em;
-   }
-
- 
-
-
-   #ppInfo1{
-      top:58%;
-      left:90%;
-      width:80%;
-      font-size:1em;
-   }
-   #ppInfo1.on{
-      top:58%;
-      left:10%;
-      font-size:1em;
-      width:50%;
-   }
-
-
-
-
-   #ppInfo2{
-      top:66%;
-      left:90%;
-      width:50%;
-      font-size:1em; 
-
-   } 
-   #ppInfo2.on{
-      top:66%;
-      left:10%;
-      font-size:1em;
-      width:50%;   
-   }
-   
-   
-
-
-
-   #ppInfo3{
-      top:72%;
-      left:90%;
-      width:50%;
-      font-size:1em; 
-   }
-   
-   #ppInfo3.on{
-      top:72%;
-     
-      left:10%;
-      font-size:1em;
-      width:50%;  
-     }
-   
-
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-   #pp_wrap{
-      width:100%;
-      height: 100%;
-      position:relative;
-  }
-
-   #ppLeft>img{
-     margin: 0 auto;
-      width:25em;
-      left:30%;
-      top:35%;
-      transform: translate(-50%,-50%);
-  }
-
-  #ppRight>h3{
-   width:100%;
-   text-align: center;
-   font-size: 2.5em;
-   left:0.5%;
-   top:0;
-   font-size:2em;
-   }
-
- 
-
-
-   #ppInfo1{
-      top:15%;
-      left:100%;
-      width:30%;
-      font-size:1.3em;
-   }
-   #ppInfo1.on{
-      top:15%;
-      left:60%;
-      font-size:1.3em;
-      width:30%;
-   }
-   
-
-
-
-   #ppInfo2{
-      top:28%;
-      left:100%;
-      width:30%;
-      font-size:1.5em; 
-
-   } 
-   #ppInfo2.on{
-      top:28%;
-      left:60%;
-      font-size:1.3em;
-      width:30%;
-   }
-   
-   
-
-
-
-   #ppInfo3{
-      top:38%;
-      left:100%;
-      width:30%;
-      font-size:1.5em; 
-   }
-   
-   #ppInfo3.on{
-      top:38%;
-     
-      left:60%;
-      font-size:1.5em;
-      width:30%;
-     }
-   
-
-
-}
-
-
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* membership */
-
-
-@media screen and (max-width: 767px) {
-   
-
-  
-  #ms_wrap>p:nth-child(1){
-      font-size :1.1em;
-      width:80%;
+   #mainImg1 {
+      width: 38%;
       margin: 0 auto;
-      padding: 5em 0 1em 0;
-
+      animation: show 0.8s 1s forwards;
+      opacity: 0;
   }
-  #ms_wrap>p:nth-child(2){
-   font-size :1.2em;
-   width:80%;
-   margin: 0 auto;
 
-}
-  #ms_wrap>img{
-      position:absolute;   
-      left:50%; top:70%; 
-      transform:translate(-50%,-50%);
+   #mainImg2 {
+      width: 44%;
+      animation: dungdung 1s 1.5s infinite alternate;  
+   }
 
-    }
-  
-  #card0{ 
-      width:16em; 
-
-      /* 재생속도 딜레이 */
-
+   #animation-target {
+      width: 60%;
+      position: absolute;
+      margin: 0 auto;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 30%;
+      filter: blur(5px);
+      overflow: hidden;
   }
-  #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10{width:12em;}
-}
+  /* ------------------------------------------- */
+ /* section1 삼성페스 */
+ /* ------------------------------------------- */
 
-#card1.animate{animation:card1 2.5s  cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-#card2.animate{animation:card2 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:8em;}
-#card3.animate{animation:card3 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:8em;}
-#card4.animate{animation:card4 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-#card5.animate{animation:card5 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-#card6.animate{animation:card6 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:8em; }
-#card7.animate{animation:card7 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:15em;}
-#card8.animate{animation:card8 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-#card9.animate{animation:card9 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-#card10.animate{animation:card10 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:15em;}
+   #pass_imgs img {
+         width: 70%;
+   }
+   #pass_wrap {
+      width: 85vw;
+      font-size: 2em;
+      justify-content: space-between;
+   }
   
 
 
-
-
-
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-
-
-
-  #ms_wrap>p:nth-child(1){
-      font-size :1.5em;
-      margin-top:1em;
-      margin-bottom:1em;
-
+   #pass_img1{
+      opacity: 0;
+      transition-delay: 100ms;
+      transition-duration:800ms;
+  }
+  #pass_img1.on{
+      opacity: 1;
+      transition-delay: 100ms;
+      transition-duration:800ms;
+  }
+  #pass_img2{
+      position: absolute;
+      bottom: 0%;
+      transition-delay: 300ms;
+      transition-duration:800ms;
+      opacity: 0;
+  }
+  #pass_img2.on{
+      bottom: 10%;
+      left: 40%;
+      opacity: 1;
+      transition-delay:300ms;
+      transition-duration:800ms;
   }
 
-  #ms_wrap>p:nth-child(2){
-   font-size :1.2em;
-   width:60%;
-   margin: 0 auto;
 
-}
-  
-  #ms_wrap>img{
-      position:absolute;   
-      left:50%; top:50%; 
-      transform:translate(-50%,-50%);
+/* ------------------------------------------- */
+   /* section2 삼성티켓 */
+/* ------------------------------------------- */
 
-    }
-  
-  #card0{ 
-      width:18em; 
+   #left_st {
+      font-size: 1.5em;
+      left: 15%;
+      top: 20%;
+      transition-duration: 800ms;
+   }
+   #left_st.on {
+      font-size: 1.5em;
+      left: 15%;
+      transition-duration: 800ms;
+      top: 20%;
 
-      /* 재생속도 딜레이 */
-      
+   }
+   #left_img img {
+      width: 100%;
   }
-  #card1,#card2,#card3,#card4,#card5,#card6,#card7,#card8,#card9,#card10{width:13em;}
-  #card1.animate{animation:card1 2.5s  cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card2.animate{animation:card2 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card3.animate{animation:card3 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card4.animate{animation:card4 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card5.animate{animation:card5 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card6.animate{animation:card6 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em; }
-   #card7.animate{animation:card7 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card8.animate{animation:card8 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card9.animate{animation:card9 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-   #card10.animate{animation:card10 2.5s cubic-bezier(0.415, 0.547, 0, 0.809);width:13em;}
-
-}
-
-
-
-
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* faq */
-
-
-@media screen and (max-width: 767px) {
+   #right_st {
+      left: 14.5%;
+      font-size: 1.3em;
+      top: 0%;
+   }
    
-   #faqLeft{width:50%;margin-top: 10em;}
-   #faqRight{width:50%;margin-top: 11em;}
-   
-   #faqLeft>img{
-      width: 10em;
-      margin: 0;
+   #liner>i:nth-child(1){
+      left:15%;
+   }
+   #liner>i:nth-child(2){
+      left:50%;
+   }
+   #liner>i:nth-child(3){
+   right:15%;
+   }
+   #liner>i:nth-child(4){
+      display: none;
+      opacity: 0;
+   } 
+
+   .cntbox img {
+      width: 43%;
   }
 
+   .cntbox > p {
+      padding-right: 0em;
+   }
 
+/* ------------------------------------------- */
+/* 환전서비스 */
+/* ------------------------------------------- */
 
-#faqLeft>p:nth-child(2){
-      font-size : 1.3em;
-      line-height: 1.5;
-      margin: 0;
-      padding: 2em 0 1.5em 0;
-      width:100%;
-  }
+#ex_wrap {
+   width: 80vw;
+   opacity: 0;
+   font-size: 1.2em;
+   transition-duration: 400ms;
+}
+#ex_wrap.on{
+   opacity: 1;
+   transition-delay: 0.7s;
+   transition-duration: 400ms;
 
-  /* 자주하는질문 */
-  #faqLeft>p:nth-child(3){
-   text-align: center;
-   margin: 0 0 1em 0;
-   font-size: 0.8em;
-  
 }
 
-/* 핸드폰 */
-  #faqRight>img:nth-child(1){
-   top: 0%;
-   left:25%;
-   width:80%;
+#exImg>img:nth-child(1){
+   width:40%;
+   opacity:1;
 }
 
-/* 카드 */
-#faqRight>img:nth-child(2){
+#exImg>img:nth-child(2) {
    width: 60%;
-   top: 10%;
-   left: 35%;
+   opacity: 1;
+}
+
+#exInfo {
+   padding-right:0%;
+}
+
+#exInfo>h3{
+   opacity:1;
+}
+
+#exInfo>p{
+   opacity:1;
 
 }
 
+
+
+/* ------------------------------------------- */
+/* 플랜 서비스 */
+/* ------------------------------------------- */
+
+
+#pp_wrap {
+   width: 80vw;
+   padding-top: 15%;
 }
 
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* faq */
 
+/* ------------------------------------------- */
+/* qaq, footer */
+/* ------------------------------------------- */
 
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
+#faq {
+   padding: 3em 0;
+}
+#faqRight img {
+   width: 50%;
+}
+#faqRight_box {
+   top: 20%;
+   left: 0.5%;
+}
+#faqRight_box img {
+   width: 42%;
+}
+   }
 
-
-   #faqLeft{width:50%;}
-   #faqRight{width:50%;}
    
-   #faqLeft>img{
-    
-      width: 10em;
-      margin: 5em 0;
+@media screen and (max-width:1024px){
+   #pass_wrap {
+      width: 95vw;
+   }
+   .m_page{
+      opacity: 1;
+      display: block;
+   }
+
+   /* 삼성티켓 모바일 버전  */
+   #samsung_ticket {
+     display: none;
+     opacity: 0;
   }
-
-
-
-#faqLeft>p:nth-child(2){
-      font-size : 1.3em;
-      line-height: 1.5;
-      margin: 0;
-      padding: 1em 0;
-      width:100%;
-  }
-
-  #faqLeft>p:nth-child(3){
-   text-align: center;
-   margin: 2em 5%;
-  font-size: 1em;
+  #mticket_wrap{
   
-}
-
-
-  #faqRight>img:nth-child(1){
-   top: 5%;
-   left:25%;
-   width:60%;
-}
-
-
-#faqRight>img:nth-child(2){
-   width: 40%;
-   top: 15%;
-   left: 35%;
-
-}
-
-
-
-}
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* ------------------------------------------------------------------------------- */
-/* footer */
-
-
-@media screen and (max-width: 767px) {
-
-   #footer{
-      
-      height:100%;
-     
+   padding-top:15%;
+   width: 80vw;
+   margin:0 auto;
+  
   }
-  #ft_wrap{
-   width: 95%;
-   margin: 0 auto;
-   padding: 1.5em 0;
-}
-   #ftInfo1{
-      font-size: 0.8em;
-   }
-   #ftInfo2{
-      font-size: 0.5em;
-   }
-}
- 
-
-
-@media screen and (min-width: 768px) and (max-width: 1279px)  {
-   #footer{
-      
-      height:100%;
-     
+  #mticket_wrap img {
+   margin:0 auto;
+   width: 90%;
   }
-  #ft_wrap{
-   width: 95%;
-   margin: 0 auto;
-   padding: 1.5em 0;
+  #mticket_content{
+   font-size: 1.2em;
+   text-align: center;
+   line-height: 150%;
+   margin-top:10%;
+  }
+  #mticket_content>p:nth-of-type(1){
+   font-weight: bolder;
+   font-size: 1.5em;
+  }
+
+  #pp_wrap {
+   width: 90vw;
+   padding-top:15%;
 }
-   #ftInfo1{
-      font-size: 0.8em;
+#ppImg ul li img{
+   width: 60%;
+}
+
+  #ex_wrap {
+   width: 80vw;
+   padding-top: 15%;
    }
-   #ftInfo2{
-      font-size: 0.5em;
+
+  
+   #ft_wrap {
+      width: 90vw;
+      margin: 0 auto;
+  }
+
+  #faqRight_box img {
+   width: 35%;
+}
+}
+
+@media screen and (max-width:768px){
+   #pass_imgs img {
+      width: 30%;
+  }
+  #pass_wrap {
+   align-content: space-evenly;
    }
+   #pass_imgs{
+      width: 56%;
+      margin: 0 auto;
+   }
+   #pass_imgs img {
+      width: 55%;
+   }
+   #pass_img2.on {
+      bottom: 5%;
+
+   }
+   #mticket_wrap {
+      padding-top: 21%;
+      
+  }
+  #exImg{
+   display: flex;
+  }
+  #exInfo {
+   padding-right: 5%;
+   padding-top: 10%;
+}
+  #exInfo>h3 {
+   margin-bottom: 5%;
+   font-size: 1.7em;
+
+}
+
+
+#ppImg {
+   padding-left: 0%;
+}
+#ppImg ul li img{
+   width: 30%;
+}
+#pp_wrap {
+      width: 90vw;
+      padding-top: 10%;
+      font-size: 1em;
+      font-weight: 500;
+  }
+   #pp_wrapimg{
+      transform: translateX(-25%);
+      margin-left: 50%;
+   }
+   
+   
+  
+   #ppContent{
+      padding-top: 10%;
+      padding-left: 5%;
+  }
+   }
+   #ppContent h3 {
+      padding-bottom: 3% !important;
+  }
+  .ppInfo{
+   font-size: 1.2em;
+   padding-bottom: 1%;
+  }
+   
+  #faq {
+   font-size: 1em;
+}
+
+@media screen and (max-width:600px){
+   #logo>img {
+      width: 10%;
+  }
+   #main_content {
+
+      padding-top: 3em;
+  }
+
+  #logoimg {
+   width: 50%;
+   }
+
+   #mainImgs div {
+      position: absolute;
+      bottom: 4em;
+      left: -5%;
+  }
+
+  #mainImg2 {
+   width: 41%;
+   }
+   #mticket_wrap {
+      padding-top: 30%;
+   }
+   #mticket_wrap img {
+      width: 100%;
+  }
+   #mticket_content {
+      margin-top: 20%;
+  }
+
+  #ex_wrap {
+   width: 80vw;
+   padding-top: 15%;
+}
+
+   #ppImg ul li img{
+      width: 40%;
+   }
+   #ppContent {
+   
+    padding-left:0%; 
+  }
+  
 }

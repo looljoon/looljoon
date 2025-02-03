@@ -1,7 +1,7 @@
 $(function(){
 
 
-  var $nav = $("#nav>ul>li>a");
+  var $nav = $(".nav>ul>li>a");
   
   var numAnimation = $(".skill_count");
   var pageIndex = Math.round($(window).scrollTop() / $(window).height());
@@ -15,9 +15,7 @@ $(function(){
 
 
 //-------------------------------------------------------
-//-------------------------------------------------------
 // 원페이지 스크롤링
-//-------------------------------------------------------
 //-------------------------------------------------------
 
   
@@ -31,25 +29,9 @@ window.addEventListener("wheel",function(event){
   console.log("cnt:", cnt);
 
   if(event.deltaY > 0){
-  // 마지막 인덱스 페이지 return
-
-
     if(pageIndex>=lastPageIndex)return;
 
-    if(pageIndex==1){
-        if($("#pfbox1").css('opacity')=="1"){
-          $("#pfbox1").css({
-            "opacity":"0",
-            "transition-duration":"400ms"
-          }),
-          $("#pfbox2").css({
-            "opacity":"1",
-            "transition-duration":"400ms"
-          })
-          return;
-    } }
-      
-  // 3p경우
+   
     if(pageIndex==lastPageIndex-1){
       cnt++;
       if(cnt<=2){
@@ -57,32 +39,12 @@ window.addEventListener("wheel",function(event){
       }else{
         pageIndex++;
     }}
-    // 3p가 아닐경우경우
     else{pageIndex++;}
   }
 
 
-
-
-
   else if(event.deltaY<0){
-   
     if(pageIndex<=0)return;
-    
-    if(pageIndex==1){
-        if($("#pfbox2").css('opacity')=="1"){
-          $("#pfbox2").css({
-            "opacity":"0",
-            "transition-duration":"400ms"
-          }),
-          $("#pfbox1").css({
-            "opacity":"1",
-            "transition-duration":"400ms"
-          })
-          return;
-    } }
-
-    
     if(pageIndex==lastPageIndex-1){
       cnt--;
       if(cnt>=0){
@@ -92,16 +54,13 @@ window.addEventListener("wheel",function(event){
       }}
       else {pageIndex--;  }
   }
-  // 스크롤 할 위치 = 뷰포트 높이 * 이동할 페이지 인덱스
   var posTop = windowHeight * pageIndex;
   $("html").animate({scrollTop : posTop});
 },{ passive:false});
 
  
 //-------------------------------------------------------
-//-------------------------------------------------------
-// skill 페이지 진입시 skill 숫자 애니매이션
-//-------------------------------------------------------
+//  skill 숫자 애니매이션
 //-------------------------------------------------------
 
   function changeNum(idx){
@@ -120,6 +79,7 @@ window.addEventListener("wheel",function(event){
   }
 
   $(window).scroll(function(){
+    console.log("scropllTop: " , $(window).scrollTop());
 
       if($("#skill").offset().top == $(window).scrollTop()) {
         for(var i =0; i<numAnimation.length; i++){
@@ -128,28 +88,43 @@ window.addEventListener("wheel",function(event){
     });
 
 //-------------------------------------------------------
-//-------------------------------------------------------
-//portfolio 페이지에서 nav 폰트의 색상을 변경
-//-------------------------------------------------------
+//portfolio 페이지 nav 폰트 색상 변경
 //-------------------------------------------------------
 
 $(window).scroll(function(){
-
   if($("#portfolio").offset().top == $(document).scrollTop()){
-    $("#nav>ul>li").addClass('active');
-    $(".mockup").addClass('on');
-    $(".mockup_info").addClass('on');
+    console.log("portolio section")
+    $nav.addClass('active');
   }else{
-    $("#nav>ul>li").removeClass('active');
-    $(".mockup").removeClass('on');
-    $(".mockup_info").removeClass('on');
+    $nav.removeClass('active');
+
   }
+  
+});
+//-------------------------------------------------------
+//profileimg stick class 
+//-------------------------------------------------------
+
+
+$(window).scroll(function(){
+ 
+  if($("#aboutme").offset().top <= $(document).scrollTop() && $("#skill").offset().top >= $(document).scrollTop() ){
+    console.log("profileimg 고정")
+    $("#profileimg").addClass('stick')
+  }else{
+    $("#profileimg").removeClass('stick');
+  }
+  // if($("#skill").offset().top < $(document).scrollTop()){
+  //   console.log($("#skill").offset().top,"스킬탑높이")
+  //   $("#profileimg").removeClass('stick');
+  // }
+ 
 });
 
-//-------------------------------------------------------
+
+
 //-------------------------------------------------------
 //  nav 의 각 list 를 클릭했을때 a 요소 hash 태그 페이지 이동
-//-------------------------------------------------------
 //-------------------------------------------------------
 $nav.click(function(event){
     console.log(".scroll_move");         
@@ -157,14 +132,14 @@ $nav.click(function(event){
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
   });
 
-
+//-------------------------------------------------------
 // 화면 크기 변경 시 reload
-jQuery(function($) {
+//-------------------------------------------------------
 
+jQuery(function($) {
     window.onresize = function(){
       document.location.reload();
     };
-
 });
  
 
