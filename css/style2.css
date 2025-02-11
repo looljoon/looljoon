@@ -212,9 +212,13 @@ img {
   background-color: #182e47;
 }
 #wrap3 {
-  width: 300vw;
+  width: 400vw;
   height: 80vh;
   transform: translateY(5%);
+  justify-content: flex-end;
+
+}
+#wrap3 div {
   justify-content: flex-end;
 }
 .mockup img{

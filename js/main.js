@@ -34,7 +34,7 @@ window.addEventListener("wheel",function(event){
    
     if(pageIndex==lastPageIndex-1){
       cnt++;
-      if(cnt<=2){
+      if(cnt<=3){
         $("#wrap3").animate({marginLeft:-100*(cnt)+'%'});
       }else{
         pageIndex++;

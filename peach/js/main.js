@@ -1,28 +1,38 @@
 $(function(){
-
-
-
-
-    // 헤더
-
+    let position1 = $('#wrap1').offset().top;
+    let position2 = $('#wrap2').offset().top;
+ 
     var $menu = $(".menu");
     var $subList = $(".subList");
     var $submenu = $(".submenu");
    
+ 
 
 
+    window.addEventListener('scroll',function(){
+        console.log(
+         "ScrollY: " ,window.scrollY,
+        "section1 offset().top : ", $("#section1").offset().top,
+        "wrap1의 높이",position1,
+        "wrap2의 높이",position2,
+        "innerHeight : " ,$(window).innerHeight(),
+    )
+    })
+
+
+    // 헤더
 
 
 
     var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
            
     //모바일이 아닌 경우 스크립트
-        if(!isMobile) {
+       
          
         // ----------------------------------------------- 
         // 서브 스크롤 메뉴 
                         
-                
+      
             $menu.on("click", function(e){
                 $subList.hide();
                 var a = $(this).attr("id");
@@ -49,70 +59,6 @@ $(function(){
         
      
         
-        // -----------------------------------------------
-        
-                var count1=0;
-                var count2=0;
-                var count3=0;
-        
-                
-                $("#adt>.decrease").on("click", function(e){
-                    e.preventDefault();
-                    if(count1<=0){
-                        return;
-                    }else{
-                        count1-=1
-                    }
-                   
-                    $(this).siblings('.result').html(count1);
-                })
-                $("#adt>.increase").on("click", function(e){
-                    e.preventDefault();
-                    count1+=1
-                    $(this).siblings('.result').html(count1);
-                })
-        
-        
-        
-        
-                $("#chd>.decrease").on("click", function(e){
-                    e.preventDefault();
-                   
-                    if(count2<=0){ 
-                        return;
-                    }else{
-                        count2-=1
-                    }
-                    $(this).siblings('.result').html(count2);
-                })
-                $("#chd>.increase").on("click", function(e){
-                    e.preventDefault();
-                    count2+=1
-                    $(this).siblings('.result').html(count2);
-                })
-        
-        
-                $("#inf>.decrease").on("click", function(e){
-                    e.preventDefault();
-                    
-                    if(count3<=0){ 
-                        return;
-                    }else{
-                        count3-=1
-                    }
-                    $(this).siblings('.result').html(count3);
-                })
-                $("#inf>.increase").on("click", function(e){
-                    e.preventDefault();
-                    count3+=1
-                    $(this).siblings('.result').html(count3);
-                })
-        
-        // -----------------------------------------------
-                // tripType
-                        
-             
-
       
     
                  
@@ -136,9 +82,7 @@ $(function(){
                 });   
                 
 
-              
-
-
+        
 
 
              }

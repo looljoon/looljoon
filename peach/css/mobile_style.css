@@ -8,9 +8,6 @@
     margin: 0 auto;
 }
 
-#wrap2 {
-    width: 90vw;
-}
 
 #wrap3 {
     width: 95vw;
@@ -36,17 +33,20 @@
 }
 
 #bookbox {
-    width: 70%;
+    width: 80%;
 }
 
+#bookC1 ul li{
+    border-bottom:1px solid #9b308d35;
+}
+#bookC1 ul li:not(:last-of-type){
+    border-right:1px solid #9b308d45;
+}
 
 .swiper-slide img {
     width: 95%;
 }
-.cityInfo {
-    width: 95%;
-   
-}
+
 
 
 #eventWrap ul li{
@@ -99,13 +99,8 @@
         width: fit-content;
         margin: 0 auto;
     }
-    .cityInfo {
-        padding-left: 1em;
-        padding-top: 0.8em;
-        line-height: 150%;
-        font-size: 1em;
-    }
-    .mapPoint li div input[type="text"] {
+   
+    .mapPoint div div input[type="text"] {
         font-size: 1em;
         width: 100%;
     }
@@ -129,26 +124,44 @@
         width:80vw;
         margin: 0 auto;
     }
-    .mobile_disappear{
-        opacity: 0;
-        display: none;
+    .mapPoint div {
+        margin-bottom: 0.5em;
     }
     .mobile_appear{
         opacity: 1;
         display: block;
     }
+    .mobile_disappear{
+        opacity: 0;
+        display: none;
+    }
+    #mobile_nav {
+        padding: 0.8em 0;
+        width: 100vw;
+        position: relative;
+    }
+    #mlogo img {
+        width: 15%;
+        margin: 0 auto;
+    }
+    
     #hamburger{
         display: block;
         opacity: 1;
+        position:absolute;
+        top: 1.8em;
+        right: 3em;
+    }
+    #hamburger button img {
+        width: 2em;
     }
     #bookbox {
-        width: 90vw;
+        width: 80vw;
+        background-color: #ffffff;
+        font-size: 0.9em;
     }
     
-    #mobile_nav{
-        padding:1em 0; 
-        width: 95vw;
-    }
+  
     #mobile_nav ul{
         align-items: center;
         justify-content: space-between;
@@ -159,8 +172,75 @@
     #mobile_nav ul li button img{
         width: 100%;
     }
-    #hamburger{
+    .swiper-button-prev {
+        top: 56% !important;
+        left: -5% !important;
+    }
+  }
+
+  @media screen and (max-width: 576px){
+    .subTitle {
+        font-weight: 700;
+        font-size: 1.5em;
+        padding: 1.5em 0;
+    }
+    #bookbox {
+        width: 80vw;
+        font-size: 0.8em;
+        transform: translateX(-50%);
+        margin-left: 51%;
+    }
+    #hamburger {
+        top: 1.1em;
+    }
+    #hamburger button img {
+        width: 1.5em;
+    }
+    #wrap3{
+        font-size: 0.8em;
+        width: 90vw;
+    }
+    #noticeWrap h3 {
+        padding-bottom: 1em;
+    }
+    #wrap4{
+        font-size: 0.8em;
+    }
+    #wrap5 {
+        width: 90vw;
+    }
+    #wrap5>ul>li {
+        width: 25%;
+        margin-bottom: 1em;
+    }
+    #tripType > ul > li {
         text-align: center;
-        padding-top: 0.5em;
+        width: 30%;
+    }
+    .mapPoint > div:nth-of-type(1),   .mapPoint > div:nth-of-type(2){
+        width: 49%;
+    }
+    #fast{
+        margin-top:3%;
+    }
+    #section5 {
+        font-size: 0.9em;
+        padding: 0em 0 2em 0;
+    }
+    #wrap5>ul>li>img {
+        margin: 0 auto;
+        padding-top: 1.5em;
+        width: 36%;
+    }
+    #footer{
+        font-size: 0.8em;
+    }
+    #footerImg>img {
+        width: 21%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+    }
+    #footerWrap {
+        width: 95vw;
     }
   }
