@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/looljoon/arcteryx/static/css/main.86148e53.css",
-    "main.js": "/looljoon/arcteryx/static/js/main.be041619.js",
+    "main.css": "/looljoon/arcteryx/static/css/main.66059eb7.css",
+    "main.js": "/looljoon/arcteryx/static/js/main.8f2c1367.js",
     "static/js/453.cfd59cba.chunk.js": "/looljoon/arcteryx/static/js/453.cfd59cba.chunk.js",
+    "static/media/sub_banner.jpg": "/looljoon/arcteryx/static/media/sub_banner.860523f1555b69bf26b4.jpg",
     "static/media/bg_s.jpg": "/looljoon/arcteryx/static/media/bg_s.4184295f888900da8631.jpg",
     "static/media/4bt2.jpg": "/looljoon/arcteryx/static/media/4bt2.f8c6e9720dfd56056d55.jpg",
     "static/media/3bt2.jpg": "/looljoon/arcteryx/static/media/3bt2.8e66dc35b9140fd6f261.jpg",
@@ -27,12 +28,12 @@
     "static/media/7bt.jpg": "/looljoon/arcteryx/static/media/7bt.ad9742ca0eac67d362ff.jpg",
     "static/media/8bt.jpg": "/looljoon/arcteryx/static/media/8bt.3de42f75f6c6a1217fc6.jpg",
     "index.html": "/looljoon/arcteryx/index.html",
-    "main.86148e53.css.map": "/looljoon/arcteryx/static/css/main.86148e53.css.map",
-    "main.be041619.js.map": "/looljoon/arcteryx/static/js/main.be041619.js.map",
+    "main.66059eb7.css.map": "/looljoon/arcteryx/static/css/main.66059eb7.css.map",
+    "main.8f2c1367.js.map": "/looljoon/arcteryx/static/js/main.8f2c1367.js.map",
     "453.cfd59cba.chunk.js.map": "/looljoon/arcteryx/static/js/453.cfd59cba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86148e53.css",
-    "static/js/main.be041619.js"
+    "static/css/main.66059eb7.css",
+    "static/js/main.8f2c1367.js"
   ]
 }
