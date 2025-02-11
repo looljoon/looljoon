@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/looljoon/arcteryx/static/css/main.66059eb7.css",
+    "main.css": "/looljoon/arcteryx/static/css/main.11ecc61e.css",
     "main.js": "/looljoon/arcteryx/static/js/main.8f2c1367.js",
     "static/js/453.cfd59cba.chunk.js": "/looljoon/arcteryx/static/js/453.cfd59cba.chunk.js",
     "static/media/sub_banner.jpg": "/looljoon/arcteryx/static/media/sub_banner.860523f1555b69bf26b4.jpg",
@@ -28,12 +28,12 @@
     "static/media/7bt.jpg": "/looljoon/arcteryx/static/media/7bt.ad9742ca0eac67d362ff.jpg",
     "static/media/8bt.jpg": "/looljoon/arcteryx/static/media/8bt.3de42f75f6c6a1217fc6.jpg",
     "index.html": "/looljoon/arcteryx/index.html",
-    "main.66059eb7.css.map": "/looljoon/arcteryx/static/css/main.66059eb7.css.map",
+    "main.11ecc61e.css.map": "/looljoon/arcteryx/static/css/main.11ecc61e.css.map",
     "main.8f2c1367.js.map": "/looljoon/arcteryx/static/js/main.8f2c1367.js.map",
     "453.cfd59cba.chunk.js.map": "/looljoon/arcteryx/static/js/453.cfd59cba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.66059eb7.css",
+    "static/css/main.11ecc61e.css",
     "static/js/main.8f2c1367.js"
   ]
 }
